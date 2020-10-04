@@ -16,4 +16,9 @@ app.post('/createArticle', (req, res) => {
   res.status(200).send()
 })
 
+app.post('/subscribe', (req, res) => {
+  console.log(req.body)
+  res.status(200).send()
+})
+
 app.listen(port, () => console.info(`Worbix Fake Server listening @ http://localhost:${port}`))
